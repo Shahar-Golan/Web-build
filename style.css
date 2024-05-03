@@ -90,9 +90,14 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
+    background-color: black; 
+    transition: all 0.3s ease-in-out;
+    display: block;
+    color: black;          
+    font-weight: normal;     
+    opacity: 1;              
 }
+
 
 .menu-links {
     position: absolute;
@@ -146,3 +151,101 @@ a:hover {
 .hamburger-icon span:first-child {
     transform: none;
 }
+
+/* SECTIONS */
+
+section {
+    padding-top: 4hv;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    height: 96vh;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    margin: auto 0;
+    width: 400px;    /* Adjusted width */
+    height: 400px;   /* Adjusted height */
+    padding: 0 50px;
+}
+
+
+.profile-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center;
+    width: 100%; /* Ensure it uses full width available */
+    padding: 0 100px; /* Adjust padding to ensure elements do not touch the edges */
+    margin-top: 100px; /* Adds vertical space between the nav bar and this container */
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    text-align: center; /* Center all text elements */
+    font-weight: 600; /* Uniform font-weight, adjust if needed */
+}
+
+.section__text_p1 {
+    text-align: center;
+}
+
+.section__text_p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem; /* Maintain margin around the introductory text */
+}
+
+.title {
+    font-size: 3rem; /* Keep title large */
+    text-align: center;
+}
+
+#social_container {
+    display: flex;
+    justify-content: center; /* Center these elements within their container */
+    margin-top: 1rem;
+    gap: 10px; /* Space between buttons/icons */
+}
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+
