@@ -164,8 +164,31 @@ section {
 
 .section-container {
     display: flex;
-    justify-content: left;
+    align-items: left;
 }
+/* /////////////////////////////////////////// */
+
+.section__pic-container, .about-details-container {
+    margin-right: 50px; /* Adds some space between the picture and the details */
+}
+
+.about-details-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: left; /* Center aligns items horizontally */
+}
+
+.details-container {
+    text-align: left; /* Centers the text and icon within the details container */
+}
+
+#about {
+    margin-top: 50px; /* Adjust this value as needed to increase the space */
+}
+
+
+
+
 
 /* PROFILE SECTION */
 
@@ -182,6 +205,7 @@ section {
     width: 400px;    /* Adjusted width */
     height: 400px;   /* Adjusted height */
     padding: 0 50px;
+    margin-right: -45px;
 }
 
 
@@ -236,6 +260,7 @@ section {
     height: 2rem;
 }
 
+
 /* BUTTONS */
 
 .btn-container {
@@ -282,6 +307,8 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+
 
 
 
