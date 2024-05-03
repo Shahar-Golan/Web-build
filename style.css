@@ -164,6 +164,7 @@ section {
 
 .section-container {
     display: flex;
+    justify-content: left;
 }
 
 /* PROFILE SECTION */
@@ -190,7 +191,7 @@ section {
     align-items: center;
     width: 100%; /* Ensure it uses full width available */
     padding: 0 100px; /* Adjust padding to ensure elements do not touch the edges */
-    margin-top: 100px; /* Adds vertical space between the nav bar and this container */
+    margin-top: 20px; /* Adds vertical space between the nav bar and this container */
 }
 
 .section__text {
@@ -203,11 +204,14 @@ section {
     font-weight: 600; /* Uniform font-weight, adjust if needed */
 }
 
-.section__text_p1 {
+.section__text__p1 {
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section__text_p1 {
+.section__text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem; /* Maintain margin around the introductory text */
 }
@@ -247,5 +251,38 @@ section {
     width: 8rem;
     border-radius: 2rem;
 }
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53,53,53) 0.1rem-solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem-solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+
 
 
