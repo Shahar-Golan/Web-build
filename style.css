@@ -186,6 +186,23 @@ section {
     margin-top: 50px; /* Adjust this value as needed to increase the space */
 }
 
+.experience-details-container {
+    text-align: left; /* Aligns text and content to the left */
+    padding-left: 20px; /* Adds some padding for better spacing from the edge */
+}
+
+.article-container {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.icon {
+    margin-left: 0;
+}
+
+
+/* /////////////////////////////////////////// */
+
 
 
 
@@ -307,6 +324,58 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 2px solid rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
 
 
 
