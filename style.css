@@ -179,7 +179,7 @@ section {
 }
 
 .details-container {
-    text-align: left; /* Centers the text and icon within the details container */
+    text-align: center; /* Centers the text and icon within the details container */
 }
 
 #about {
@@ -191,10 +191,7 @@ section {
     padding-left: 20px; /* Adds some padding for better spacing from the edge */
 }
 
-.article-container {
-    padding-left: 0;
-    margin-left: 0;
-}
+
 
 .icon {
     margin-left: 0;
@@ -397,23 +394,60 @@ section {
 
 .article-container {
     display: flex;
+    flex-direction: row;
     text-align: initial;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
+    align-items: flex-start;
     justify-content: space-around;
+    gap: 2.5rem;  /* Adjust the gap between articles */;
 }
 
 article {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: column;
     gap: 0.5rem;
+    box-sizing: border-box;
 }
 
 article .icon {
     cursor: default;
 }
+
+
+/* PROJECT SECTION */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 2rem;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
+/* CONTACT SECTION */
+
+
 
 
 
