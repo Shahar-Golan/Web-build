@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-P {
+p {
     color: rgb(85, 85, 85);
 }
 
@@ -38,6 +38,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    
 }
 
 .nav-links {
