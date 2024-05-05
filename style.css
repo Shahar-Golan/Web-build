@@ -186,10 +186,7 @@ section {
     margin-top: 50px; /* Adjust this value as needed to increase the space */
 }
 
-.experience-details-container {
-    text-align: left; /* Aligns text and content to the left */
-    padding-left: 20px; /* Adds some padding for better spacing from the edge */
-}
+
 
 
 
@@ -377,7 +374,10 @@ section {
 
 #experience {
     position: relative;
+    margin-top: 20px;
+    padding-top: 10px; /* Alternatively, you could use padding */
 }
+
 
 .experience-sub-title {
     color: rgb(85, 85, 85);
@@ -421,6 +421,8 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-top: 20px;
+    padding-top: 10px; /* Alternatively, you could use padding */
 }
 
 .color-container {
@@ -446,6 +448,57 @@ article .icon {
 
 
 /* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(53, 53, 53) ;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.55rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
 
 
 
