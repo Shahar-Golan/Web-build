@@ -93,10 +93,7 @@ a:hover {
     height: 2px;
     background-color: black; 
     transition: all 0.3s ease-in-out;
-    display: block;
-    color: black;          
-    font-weight: normal;     
-    opacity: 1;              
+                 
 }
 
 
@@ -165,34 +162,15 @@ section {
 
 .section-container {
     display: flex;
-    align-items: left;
 }
 /* /////////////////////////////////////////// */
 
+#about {
+    margin-top: 40px; /* Adjust this value as needed to increase the space */
+}
+
 .section__pic-container, .about-details-container {
     margin-right: 50px; /* Adds some space between the picture and the details */
-}
-
-.about-details-container {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: left; /* Center aligns items horizontally */
-}
-
-.details-container {
-    text-align: center; /* Centers the text and icon within the details container */
-}
-
-#about {
-    margin-top: 50px; /* Adjust this value as needed to increase the space */
-}
-
-
-
-
-
-.icon {
-    margin-left: 0;
 }
 
 
@@ -216,18 +194,6 @@ section {
     margin: auto 0;
     width: 400px;    /* Adjusted width */
     height: 400px;   /* Adjusted height */
-    padding: 0 50px;
-    margin-right: -45px;
-}
-
-
-.profile-container {
-    display: flex;
-    justify-content: flex-start; /* Align items to the start of the container */
-    align-items: center;
-    width: 100%; /* Ensure it uses full width available */
-    padding: 0 100px; /* Adjust padding to ensure elements do not touch the edges */
-    margin-top: 20px; /* Adds vertical space between the nav bar and this container */
 }
 
 .section__text {
@@ -236,18 +202,15 @@ section {
 }
 
 .section__text p {
-    text-align: center; /* Center all text elements */
     font-weight: 600; /* Uniform font-weight, adjust if needed */
 }
 
 .section__text__p1 {
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.section__text_p2 {
+
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem; /* Maintain margin around the introductory text */
 }
@@ -365,11 +328,6 @@ section {
     height: 80%;
 }
 
-.section__pic-container {
-    width: 400px;
-    height: 400px;
-    margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
