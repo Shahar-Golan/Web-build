@@ -15,4 +15,3 @@ This repository contains the source code for my personal portfolio website. The 
 - **JavaScript**: Dynamic interactions on the web pages.
 - **Media Queries**: For responsive design.
 
-## Project Structure
