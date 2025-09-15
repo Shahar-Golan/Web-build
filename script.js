@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scaleMobile: 1.00,
         color: 0xcccccc,
         backgroundColor: 0xf5f5f5,
-        points: 15.00,
+        points: 10.00,
         maxDistance: 22.00,
         spacing: 14.00
     });

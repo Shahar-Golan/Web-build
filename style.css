@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 }
 
 #vanta-background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,7 +51,7 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 8vh;
     
 }
 
@@ -333,6 +335,8 @@ section {
     border-radius: 2rem;
     border: 2px solid rgb(163, 163, 163);
     text-align: center;
+    min-width: 300px;
+    max-width: 350px;
 }
 
 .section-container {
@@ -399,12 +403,18 @@ article .icon {
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    min-height: 400px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-img {
     width: 90%;
-    height: 90%;
+    height: 200px;
     border-radius: 2rem;
+    object-fit: cover;
 }
 
 .project-title {
