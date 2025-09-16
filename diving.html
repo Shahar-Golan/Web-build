@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diving Adventures - Shahar Golan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="diving-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body>
+    <div id="vanta-background"></div>
+    <nav id="desktop-nav">
+        <div class="logo">Shahar Golan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#diving">Diving</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shahar Golan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#diving" onclick="toggleMenu()">Diving</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="diving">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Diving Adventures</h1>
+        
+        <div class="diving-container">
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <h3 class="video-title">Deep Blue Exploration</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/HcbljyyoZwY" 
+                            title="Deep Blue Exploration"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <h3 class="video-title">Coral Reef Discovery</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/-6dJYV-rE1c" 
+                            title="Coral Reef Discovery"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <h3 class="video-title">Underwater Paradise</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/iOhVLHGklsQ" 
+                            title="Underwater Paradise"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card">
+                    <h3 class="video-title">Marine Life Encounters</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/AiVgIxnhjzs" 
+                            title="Marine Life Encounters"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-portfolio">
+            <button class="btn btn-color-1" onclick="location.href='index.html'">
+                Back to Portfolio
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="#diving">Diving</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shahar Golan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
