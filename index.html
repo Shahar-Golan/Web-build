@@ -49,7 +49,7 @@
                 <p class="section__text__p2">M.Sc. Data Science student</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2" 
-                    onclick="window.open('./assets/Shahar Golan - CV.pdf')">
+                    onclick="openPdfModal()">
                     View CV
                     </button>
             
@@ -101,15 +101,12 @@
                             class="icon" 
                             />
                             <h3>Education</h3>
-                            <p>B.Sc Computer Science-Graduate July 25<br>Psychometric Grade: 729<br>GPA: 86.3</p>
+                            <p>B.Sc Computer Science-Graduate July 25<br>GPA: 87</p>
                         </div>
                     </div>
                     <div class="text-container">
                         <p>
-                          I am a third-year Computer Science student pursuing a B.Sc with an emphasis in Data Science.
-                          I possess strong analytical skills, creative thinking, and commitment.
-                          I have an extensive management and command experience from my military service and current work in the defense industry.
-                          In my personal life, I enjoy sports, mainly running and playing basketball, and love to travel and explore new places.
+                        I’m a passionate M.Sc. Data Science student at the Technion, with a strong foundation in computer science and a deep interest in ML and data analysis. Beyond academics, I enjoy sports - especially running, basketball, and I love traveling and exploring new places. One of my unique hobbies is scuba diving in exotic locations around the world. I’ve uploaded some of my favorite dive videos to the “Diving” section of this portfolio—feel free to check them out!
                         </p>
                     </div>
                 </div>
@@ -242,6 +239,24 @@
         </nav>
         <p>Copyright &#169; 2024 Shahar Golan. All Rights Reserved.</p>
     </footer>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3 class="pdf-modal-title">Shahar Golan - CV</h3>
+                <div class="pdf-modal-controls">
+                    <button class="pdf-close-btn" onclick="closePdfModal()">
+                        ×
+                    </button>
+                </div>
+            </div>
+            <div class="pdf-viewer">
+                <iframe id="pdfViewer" src="" type="application/pdf"></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js">
     </script>
   </body>

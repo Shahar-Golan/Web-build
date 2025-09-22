@@ -438,6 +438,128 @@ footer p {
     text-align: center;
 }
 
+/* PDF MODAL STYLES */
+.pdf-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.pdf-modal-content {
+    position: relative;
+    background-color: white;
+    margin: 2% auto;
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    border-radius: 10px 10px 0 0;
+}
+
+.pdf-modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+}
+
+.pdf-modal-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pdf-download-btn {
+    background: rgb(53, 53, 53);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.pdf-download-btn:hover {
+    background: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+.pdf-close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.pdf-close-btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.pdf-viewer {
+    flex: 1;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Mobile responsive for PDF modal */
+@media screen and (max-width: 768px) {
+    .pdf-modal-content {
+        width: 95%;
+        height: 95%;
+        margin: 2.5% auto;
+    }
+    
+    .pdf-modal-header {
+        padding: 15px;
+    }
+    
+    .pdf-modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .pdf-download-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
 
 
 

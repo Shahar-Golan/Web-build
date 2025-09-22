@@ -9,8 +9,8 @@ function toggleMenu() {
 document.addEventListener('DOMContentLoaded', function() {
     VANTA.NET({
         el: "#vanta-background",
-        mouseControls: true,
-        touchControls: true,
+        mouseControls: false,
+        touchControls: false,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
@@ -22,4 +22,51 @@ document.addEventListener('DOMContentLoaded', function() {
         maxDistance: 22.00,
         spacing: 14.00
     });
+});
+
+// PDF Modal Functions
+function openPdfModal() {
+    const modal = document.getElementById('pdfModal');
+    const pdfViewer = document.getElementById('pdfViewer');
+    
+    // Set the PDF source
+    pdfViewer.src = './assets/Shahar Golan - CV.pdf';
+    
+    // Show the modal
+    modal.style.display = 'block';
+    
+    // Prevent body scrolling when modal is open
+    document.body.style.overflow = 'hidden';
+}
+
+function closePdfModal() {
+    const modal = document.getElementById('pdfModal');
+    const pdfViewer = document.getElementById('pdfViewer');
+    
+    // Hide the modal
+    modal.style.display = 'none';
+    
+    // Clear the PDF source to stop loading
+    pdfViewer.src = '';
+    
+    // Restore body scrolling
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById('pdfModal');
+    if (event.target == modal) {
+        closePdfModal();
+    }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('pdfModal');
+        if (modal.style.display === 'block') {
+            closePdfModal();
+        }
+    }
 });
