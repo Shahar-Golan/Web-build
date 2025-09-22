@@ -15,7 +15,6 @@
         <div class="logo">Shahar Golan</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="diving.html">Diving</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -30,8 +29,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <ul class="menu-links">  <!-- Fixed: Added <ul> tag -->
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <ul class="menu-links">
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="diving.html" onclick="toggleMenu()">Diving</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -40,13 +38,20 @@
     </nav>
     <section id="profile">
             <div class="section__pic-container">
-                <img src= "./assets/profile-picture.png"
+                <img src= "./assets/koh_phi_phi.png"
                 alt="Shahar Golan profile picture" />
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello I'm</p>
                 <h1 class="title">Shahar Golan</h1>
                 <p class="section__text__p2">M.Sc. Data Science student</p>
+                
+                <div class="about-description">
+                    <p>
+                        I'm a passionate M.Sc. Data Science student at the Technion, with a strong foundation in computer science and a deep interest in ML and data analysis. Beyond academics, I enjoy sports - especially running, basketball, and I love traveling and exploring new places. One of my unique hobbies is scuba diving in exotic locations around the world. I've uploaded some of my favorite dive videos to the "Diving" section of this portfolio—feel free to check them out!
+                    </p>
+                </div>
+                
                 <div class="btn-container">
                     <button class="btn btn-color-2" 
                     onclick="openPdfModal()">
@@ -73,52 +78,6 @@
                 </div>
         </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <p class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section__pic-container">
-                    <img src= "./assets/koh_phi_phi.png" 
-                    alt="Koh Phi Phi"
-                    class="about-pic"
-                    />
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img 
-                            src="./assets/experience.png"
-                            alt="Experience icon" 
-                            class="icon" 
-                            />
-                            <h3>Experience</h3>
-                            <p>Machine learning<br>Python Programing<br>Data Analysis</p>
-                        </div>
-                        <div class="details-container">
-                            <img 
-                            src="./assets/education.png"
-                            alt="Education" 
-                            class="icon" 
-                            />
-                            <h3>Education</h3>
-                            <p>B.Sc Computer Science-Graduate July 25<br>GPA: 87</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                        I’m a passionate M.Sc. Data Science student at the Technion, with a strong foundation in computer science and a deep interest in ML and data analysis. Beyond academics, I enjoy sports - especially running, basketball, and I love traveling and exploring new places. One of my unique hobbies is scuba diving in exotic locations around the world. I’ve uploaded some of my favorite dive videos to the “Diving” section of this portfolio—feel free to check them out!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href='#projects'"
-            />
-
-    </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -139,13 +98,6 @@
                      onclick="location.href='https://github.com/Shahar-Golan/Drone-System'">
                         Github
                     </button>
-                    <!--
-                    <button
-                     class="btn btn-color-2 project-btn"
-                     onclick="location.href='https://github.com/Shahar-Golan/html-css-js-portfolio'">
-                        Live Demo
-                    </button>
-                -->
                 </div>
             </div>
             <div class="details-container color-container">
@@ -163,13 +115,6 @@
                      onclick="location.href='https://github.com/Shahar-Golan/html-css-js-portfolio'">
                         Github
                     </button>
-                    <!--
-                    <button
-                     class="btn btn-color-2 project-btn"
-                     onclick="location.href='https://github.com/Shahar-Golan/html-css-js-portfolio'">
-                        Live Demo
-                    </button>
-                    -->
                 </div>
             </div>
             <div class="details-container color-container">
@@ -186,13 +131,6 @@
                      onclick="location.href='https://github.com/Shahar-Golan/NBA-Data-Analysis'">
                         Github
                     </button>
-                    <!--
-                    <button
-                     class="btn btn-color-2 project-btn"
-                     onclick="location.href='https://github.com/Shahar-Golan/html-css-js-portfolio'">
-                        Live Demo
-                    </button>
-                    -->
                 </div>
             </div>
          </div>
@@ -230,7 +168,6 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="diving.html">Diving</a></li>
                     <li><a href="#contact">Contact</a></li>
