@@ -409,6 +409,54 @@ section {
     flex-direction: column;
 }
 
+.projects-main-container {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.projects-left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.python-pic-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.python-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.projects-description {
+    max-width: 400px;
+    text-align: center;
+}
+
+.projects-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+.projects-right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
@@ -434,6 +482,21 @@ section {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.private-repo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.private-repo-text p {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0;
 }
 
 
