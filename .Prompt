@@ -2,8 +2,6 @@
 
 2. change the project section into two projects that been presented when the user hover or clicks
 
-3. modify the expreience section based on my CV
-
 4. add the paper topic that have been accepted into IsraHCI 2025, the paper will be presented in the confrence that will accour on 22.10.25 university of Haifa.
 
 5. Add my photo with the Python and write something funny - thats in the main page (index.html) under projects section.
@@ -16,3 +14,8 @@ photo below: Me dealing with a complex Python problem.
 
 link to allegro hand demo: https://youtu.be/8JIE5bv2SeY
 
+8. NBA: Researched the correlation between players' regular season performance and playoff achievements.
+Developed a classification model using Pandas, Scikit-learn to predict win/loss outcomes for NBA playoffs.
+
+9. Allegro: Optimizing a pre-developed robotic hand to accurately mimic human gestures in real time, using data
+science techniques. The system is developed using C++ and Unity (C#).
