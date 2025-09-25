@@ -501,6 +501,25 @@ section {
     border-color: rgb(163, 163, 163);
 }
 
+.paper-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: rgba(33, 150, 243, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.paper-text {
+    color: rgb(25, 118, 210);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+}
+
 .private-repo-text {
     display: flex;
     justify-content: center;

@@ -9,7 +9,174 @@
     }
 }
 
+/* FORCE MOBILE LAYOUT FOR 601px-899px */
+@media screen and (max-width: 899px) and (min-width: 601px) {
+    /* Apply all mobile styles to this range */
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
 
+    #contact, #footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+        display: block;
+    }
+    
+    section {
+        margin: 0 5%;
+        height: fit-content;
+    }
+    
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+     .contact-info-upper-container,
+      .btn-upper-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p {
+        margin: 0;
+    }
+    .contact-info-container p,
+     .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 2rem;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+        margin: 0;
+    }
+
+    /* Mobile responsive for projects section */
+    .projects-main-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .python-pic-container {
+        width: 320px;
+        height: 320px;
+    }
+
+    .projects-description {
+        max-width: 350px;
+    }
+
+    .about-containers {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .color-container {
+        max-width: 350px;
+        min-height: 400px;
+        max-height: 500px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+/* FORCE DESKTOP LAYOUT FOR 900px-1199px */
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+    /* Keep desktop navigation but apply some constraints */
+    #desktop-nav {
+        display: flex;
+    }
+    #hamburger-nav {
+        display: none;
+    }
+
+    /* Keep desktop profile layout but with adjusted sizing */
+    #profile {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        height: 80vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .section__pic-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .right-side .section__pic-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    /* Desktop projects layout with smaller images */
+    .projects-main-container {
+        display: flex;
+        gap: 3rem;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .python-pic-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .projects-description {
+        max-width: 400px;
+    }
+
+    .about-containers {
+        display: flex;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .color-container {
+        max-width: 400px;
+    }
+
+    section {
+        margin: 0 3%;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -52,13 +219,27 @@
 }
 
 @media screen and (max-width: 600px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
     #contact, #footer {
         height: 40vh;
     }
     #profile {
         height: 83vh;
         margin-bottom: 0;
+        display: block;
     }
+    
+    section {
+        margin: 0 5%;
+        height: fit-content;
+    }
+    
     article {
         font-size: 1rem;
     }
@@ -127,6 +308,7 @@
     .about-containers {
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
 
     .color-container {
@@ -135,4 +317,7 @@
         max-height: 500px;
     }
 
+    .arrow {
+        display: none;
+    }
 }

@@ -39,15 +39,38 @@ function openPdfModal() {
     document.body.style.overflow = 'hidden';
 }
 
+// Research Paper PDF Modal Function
+function openPaperModal() {
+    const modal = document.getElementById('pdfModal');
+    const pdfViewer = document.getElementById('pdfViewer');
+    const modalTitle = document.querySelector('.pdf-modal-title');
+    
+    // Update the modal title for the research paper
+    modalTitle.textContent = 'IsraHCI 2025 Conference Paper';
+    
+    // Set the research paper PDF source
+    pdfViewer.src = './assets/IsraHCI2025_paper_77.pdf';
+    
+    // Show the modal
+    modal.style.display = 'block';
+    
+    // Prevent body scrolling when modal is open
+    document.body.style.overflow = 'hidden';
+}
+
 function closePdfModal() {
     const modal = document.getElementById('pdfModal');
     const pdfViewer = document.getElementById('pdfViewer');
+    const modalTitle = document.querySelector('.pdf-modal-title');
     
     // Hide the modal
     modal.style.display = 'none';
     
     // Clear the PDF source to stop loading
     pdfViewer.src = '';
+    
+    // Reset modal title to default
+    modalTitle.textContent = 'Shahar Golan - CV';
     
     // Restore body scrolling
     document.body.style.overflow = 'auto';
