@@ -109,6 +109,30 @@
         margin: 0;
     }
 
+    /* Mobile responsive for projects section */
+    .projects-main-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
+    .python-pic-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .projects-description {
+        max-width: 300px;
+    }
+
+    .about-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .color-container {
+        max-width: 300px;
+        min-height: 400px;
+        max-height: 500px;
+    }
 
 }
