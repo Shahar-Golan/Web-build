@@ -107,8 +107,8 @@
 
     .color-container {
         max-width: 350px;
-        min-height: 400px;
-        max-height: 500px;
+        min-height: 450px;
+        max-height: 550px;
     }
 
     .arrow {
@@ -313,8 +313,8 @@
 
     .color-container {
         max-width: 300px;
-        min-height: 400px;
-        max-height: 500px;
+        min-height: 450px;
+        max-height: 550px;
     }
 
     .arrow {
